@@ -1,0 +1,71 @@
+<!DOCTYPE html><html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      S106 Tracker
+    </title>
+    <link rel="stylesheet" href="https://unpkg.com/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bulmaswatch/sandstone/bulmaswatch.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/later/1.2.0/later.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prettycron/0.11.0/prettycron.min.js"></script>
+    <script src="https://unpkg.com/netlify-identity-widget@^1"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+      function openTab(evt, tabName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("content-tab");
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tab");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" is-active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " is-active";
+}
+    </script>
+  </head>
+  
+  <body>
+    <section class="hero is-success">
+<div class="hero-body">
+  <div class="container has-text-centered">
+      <h1 class="title">
+        JS for Bulma Tabs 
+      </h1>
+    </div>
+</div> 
+  
+<div class="hero-foot">
+<nav class="tabs is-boxed is-fullwidth is-large">
+        <div class="container">
+          <ul>
+            <li class="tab is-active" onclick="openTab(event,'WebDev')"><a >Web Development</a></li>
+            <li class="tab" onclick="openTab(event,'WebAud')"><a >Website Audit</a></li>
+            <li class="tab" onclick="openTab(event,'Support')"><a >Support</a></li>
+          </ul>
+        </div>
+      </nav>
+  </div>
+</section>
+
+<div class="container section">
+    <div id="WebDev" class="content-tab" >
+      <p>
+        test1<br>
+      Overview Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+    <div id="WebAud" class="content-tab" style="display:none">
+        <p>
+          test2<br>
+        Details Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+    <div id="Support" class="content-tab" style="display:none">
+       <p>
+         test3 <br>  
+       Specification Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+</div>
+  </body>
